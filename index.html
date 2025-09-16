@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>(⌒‿⌒) Terrible (Fall&#x27;25)</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{
+  --bg: #0b1220;
+  --panel: #0f1724;
+  --muted: #d7e0ea;
+  --accent: #5fb8ff;
+  --gap:12px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color-scheme: dark;
+}
+html,body{height:100%;margin:0}
+body{
+  margin:28px;
+  background-color:var(--bg);
+  color:var(--muted);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+header{display:flex;align-items:baseline;gap:12px;margin-bottom:14px}
+h1{margin:0;font-size:1.25rem}
+.meta{color:rgba(215,224,234,0.9);font-size:0.95rem}
+main{max-width:1100px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.day-section{
+  background:var(--panel);
+  border:1px solid rgba(255,255,255,0.03);
+  border-radius:10px;padding:12px;
+}
+.day-header{display:flex;align-items:center;margin-bottom:10px}
+.day-name{font-weight:700;color:var(--accent);font-size:1rem;text-transform:capitalize}
+.day-row{display:flex;gap:var(--gap);flex-wrap:wrap}
+.slot{min-width:220px;flex:1 1 240px;display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:10px;
+  background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.02)}
+.time{width:96px;font-weight:700;color:var(--muted);flex-shrink:0}
+.lectures{flex:1;display:flex;flex-direction:column;gap:8px}
+.lecture{padding:10px;border-radius:8px;background:rgba(255,255,255,0.015);border:1px solid rgba(255,255,255,0.01)}
+.title{font-weight:700;color:#fff}
+.attendees{font-size:0.85rem;color:rgba(215,224,234,0.9);margin-top:8px;display:flex;gap:8px;flex-wrap:wrap}
+.att-pill{padding:6px 10px;border-radius:999px;background:rgba(95,184,255,0.08);border:1px solid rgba(95,184,255,0.12);font-size:0.85rem;color:var(--muted)}
+footer{margin-top:16px;color:rgba(215,224,234,0.6);font-size:0.9rem;text-align:center}
+/* subtle, low-cost fade-in using opacity only (no transforms) */
+.slot, .lecture, .att-pill{opacity:0}
+.visible{opacity:1;transition:opacity 260ms linear}
+@media (max-width:900px){ .slot{flex-basis:45%} }
+@media (max-width:600px){ body{margin:14px} .slot{flex-basis:100%} .time{width:76px} }
+</style>
+</head>
+<body>
+<header>
+  <h1>(⌒‿⌒) Terrible</h1>
+  <div class="meta">Semester: Fall&#x27;25</div>
+</header>
+<main>
+<section class="day-section">  <header class="day-header"><div class="day-name">Monday</div></header>  <div class="day-row"><div class="slot">  <div class="time">09:00 — 10:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Slot A</div>  <div class="attendees">—</div></div></div></div>
+<div class="slot">  <div class="time">10:00 — 11:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Slot B</div>  <div class="attendees">—</div></div></div></div>
+<div class="slot">  <div class="time">11:00 — 12:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Discrete Math</div>  <div class="attendees"><span class="att-pill">SA</span> <span class="att-pill">SB</span></div></div></div></div>
+<div class="slot">  <div class="time">12:00 — 13:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Data Structure</div>  <div class="attendees"><span class="att-pill">SA</span> <span class="att-pill">SB</span></div></div></div></div>
+<div class="slot">  <div class="time">13:00 — 14:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Lunch Break</div>  <div class="attendees">—</div></div></div></div>
+<div class="slot">  <div class="time">14:00 — 16:00</div>  <div class="lectures"><div class="lecture">  <div class="title">DSPD Lab</div>  <div class="attendees"><span class="att-pill">R1</span> <span class="att-pill">R2</span></div></div></div></div>
+<div class="slot">  <div class="time">16:00 — 18:00</div>  <div class="lectures"><div class="lecture">  <div class="title">DCMP Lab</div>  <div class="attendees"><span class="att-pill">R1</span> <span class="att-pill">R2</span></div></div></div></div></div></section>
+<section class="day-section">  <header class="day-header"><div class="day-name">Tuesday</div></header>  <div class="day-row"><div class="slot">  <div class="time">08:00 — 09:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Slot A</div>  <div class="attendees">—</div></div></div></div>
+<div class="slot">  <div class="time">10:00 — 11:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Probability Theory</div>  <div class="attendees"><span class="att-pill">SA</span> <span class="att-pill">SB</span></div></div></div></div>
+<div class="slot">  <div class="time">11:00 — 12:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Digital Circuits</div>  <div class="attendees"><span class="att-pill">SA</span> <span class="att-pill">SB</span></div></div></div></div>
+<div class="slot">  <div class="time">12:00 — 13:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Tech Communication</div>  <div class="attendees"><span class="att-pill">All</span></div></div></div></div>
+<div class="slot">  <div class="time">13:00 — 14:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Lunch Break</div>  <div class="attendees">—</div></div></div></div>
+<div class="slot">  <div class="time">14:00 — 16:00</div>  <div class="lectures"><div class="lecture">  <div class="title">DSPD LAB</div>  <div class="attendees"><span class="att-pill">R3</span> <span class="att-pill">R4</span></div></div></div></div>
+<div class="slot">  <div class="time">16:00 — 18:00</div>  <div class="lectures"><div class="lecture">  <div class="title">DCMP LAB</div>  <div class="attendees"><span class="att-pill">R3</span> <span class="att-pill">R4</span></div></div></div></div></div></section>
+<section class="day-section">  <header class="day-header"><div class="day-name">Wednesday</div></header>  <div class="day-row"><div class="slot">  <div class="time">08:00 — 09:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Probability Theory</div>  <div class="attendees"><span class="att-pill">SA</span> <span class="att-pill">SB</span></div></div></div></div>
+<div class="slot">  <div class="time">11:00 — 12:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Digital Circuits</div>  <div class="attendees"><span class="att-pill">SA</span> <span class="att-pill">SB</span></div></div></div></div>
+<div class="slot">  <div class="time">12:00 — 13:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Tech Communication</div>  <div class="attendees"><span class="att-pill">All</span></div></div></div></div>
+<div class="slot">  <div class="time">13:00 — 14:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Lunch Break</div>  <div class="attendees">—</div></div></div></div>
+<div class="slot">  <div class="time">14:00 — 15:00</div>  <div class="lectures"><div class="lecture">  <div class="title">PTSM Tutorial</div>  <div class="attendees"><span class="att-pill">B1</span></div></div>
+<div class="lecture">  <div class="title">DMGT TUT</div>  <div class="attendees"><span class="att-pill">B2</span></div></div></div></div>
+<div class="slot">  <div class="time">15:00 — 16:00</div>  <div class="lectures"><div class="lecture">  <div class="title">DMGT Tutorial</div>  <div class="attendees"><span class="att-pill">B1</span></div></div>
+<div class="lecture">  <div class="title">PTSM TUT</div>  <div class="attendees"><span class="att-pill">B2</span></div></div></div></div>
+<div class="slot">  <div class="time">14:00 — 16:00</div>  <div class="lectures"><div class="lecture">  <div class="title">DSPD Lab</div>  <div class="attendees"><span class="att-pill">R5</span></div></div></div></div>
+<div class="slot">  <div class="time">16:00 — 18:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Data Structure</div>  <div class="attendees"><span class="att-pill">All</span></div></div></div></div></div></section>
+<section class="day-section">  <header class="day-header"><div class="day-name">Thursday</div></header>  <div class="day-row"><div class="slot">  <div class="time">08:00 — 09:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Slot B</div>  <div class="attendees">—</div></div></div></div>
+<div class="slot">  <div class="time">09:00 — 10:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Data Structure</div>  <div class="attendees"><span class="att-pill">SA</span> <span class="att-pill">SB</span></div></div></div></div>
+<div class="slot">  <div class="time">10:00 — 11:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Discrete Math</div>  <div class="attendees"><span class="att-pill">SA</span> <span class="att-pill">SB</span></div></div></div></div>
+<div class="slot">  <div class="time">11:00 — 12:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Digital Circuits</div>  <div class="attendees"><span class="att-pill">SA</span></div></div>
+<div class="lecture">  <div class="title">DSPD TUT</div>  <div class="attendees"><span class="att-pill">SB</span></div></div></div></div>
+<div class="slot">  <div class="time">12:00 — 13:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Probability Theory</div>  <div class="attendees"><span class="att-pill">SA</span> <span class="att-pill">SB</span></div></div></div></div>
+<div class="slot">  <div class="time">13:00 — 14:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Lunch Break</div>  <div class="attendees">—</div></div></div></div>
+<div class="slot">  <div class="time">14:00 — 15:00</div>  <div class="lectures"><div class="lecture">  <div class="title">DMGT Tutorial</div>  <div class="attendees"><span class="att-pill">B4</span></div></div>
+<div class="lecture">  <div class="title">PTSM TUT</div>  <div class="attendees"><span class="att-pill">B3</span></div></div></div></div>
+<div class="slot">  <div class="time">15:00 — 16:00</div>  <div class="lectures"><div class="lecture">  <div class="title">DMGT Tutorial</div>  <div class="attendees"><span class="att-pill">B3</span></div></div>
+<div class="lecture">  <div class="title">PTSM TUT</div>  <div class="attendees"><span class="att-pill">B4</span></div></div></div></div>
+<div class="slot">  <div class="time">16:00 — 18:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Software Lab</div>  <div class="attendees"><span class="att-pill">SA</span></div></div></div></div></div></section>
+<section class="day-section">  <header class="day-header"><div class="day-name">Friday</div></header>  <div class="day-row"><div class="slot">  <div class="time">08:00 — 09:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Slot A</div>  <div class="attendees">—</div></div></div></div>
+<div class="slot">  <div class="time">09:00 — 10:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Discrete Math</div>  <div class="attendees"><span class="att-pill">SA</span></div></div>
+<div class="lecture">  <div class="title">Data Structure</div>  <div class="attendees"><span class="att-pill">SB</span></div></div></div></div>
+<div class="slot">  <div class="time">10:00 — 11:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Data Strcture</div>  <div class="attendees"><span class="att-pill">SA</span></div></div>
+<div class="lecture">  <div class="title">Discrete Math</div>  <div class="attendees"><span class="att-pill">SB</span></div></div></div></div>
+<div class="slot">  <div class="time">11:00 — 12:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Tech Communication</div>  <div class="attendees"><span class="att-pill">All</span></div></div></div></div>
+<div class="slot">  <div class="time">12:00 — 13:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Digital Circuits</div>  <div class="attendees"><span class="att-pill">SB</span></div></div>
+<div class="lecture">  <div class="title">DSPD Tutorial</div>  <div class="attendees"><span class="att-pill">SA</span></div></div></div></div>
+<div class="slot">  <div class="time">13:00 — 14:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Lunch Break</div>  <div class="attendees">—</div></div></div></div>
+<div class="slot">  <div class="time">14:00 — 16:00</div>  <div class="lectures"><div class="lecture">  <div class="title">Software Lab</div>  <div class="attendees"><span class="att-pill">SB</span></div></div></div></div></div></section>
+</main>
+<footer>
+  :::
+</footer>
+<script>
+(function(){
+  var rows = document.querySelectorAll('.day-row');
+  rows.forEach(function(row){
+    var slots = Array.prototype.slice.call(row.querySelectorAll('.slot'));
+    slots.forEach(function(slot, i){
+      setTimeout(function(){ slot.classList.add('visible'); }, i * 40);
+      var lecs = slot.querySelectorAll('.lecture');
+      lecs.forEach(function(l, j){
+        setTimeout(function(){ l.classList.add('visible'); }, i*40 + 80 + j*30);
+      });
+      var pills = slot.querySelectorAll('.att-pill');
+      pills.forEach(function(p, k){
+        setTimeout(function(){ p.classList.add('visible'); }, i*40 + 140 + k*20);
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
