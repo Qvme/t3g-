@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 yaml_to_html.py
-Reads sample6.yaml and writes schedule.html (single-page grouped-by-day layout).
+Reads terrible.yaml and writes index.html (single-page grouped-by-day layout).
 Requires: PyYAML
 """
 
