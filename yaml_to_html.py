@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 yaml_to_html.py
-Reads terrible.yaml and writes index.html (single-page grouped-by-day layout).
+Reads sample6.yaml and writes schedule.html (single-page grouped-by-day layout).
 Requires: PyYAML
 """
 
@@ -161,7 +161,7 @@ footer{margin-top:16px;color:rgba(215,224,234,0.6);font-size:0.9rem;text-align:c
 __DAYS_HTML__
 </main>
 <footer>
-  :::
+  ⠑⠝⠙
 </footer>
 <script>
 (function(){
