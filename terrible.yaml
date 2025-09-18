@@ -1,5 +1,5 @@
 name: "(⌒‿⌒) Terrible"
-semester: "FCombined'25"
+semester: "Fall'25"
 week:
   monday:
     - { time: ["09:00","10:00"], lectures: [ { lecture: "Slot A", attendees: [] } ] }
